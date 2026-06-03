@@ -1,3 +1,4 @@
+#https://codeforces.com/problemset/problem/466/A
 n,m,a,b=map(int,input().split())
 if(a*m<b):
     print(a*n)

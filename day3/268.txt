@@ -1,0 +1,22 @@
+class Solution:
+    def missingNumber(self, nums: List[int]) -> int:
+        n=len(nums)
+        j=0
+        for i in nums:
+            j+=i
+        return (n*(n+1)//2)-j
+
+class Solution:
+    def missingNumber(self, nums: List[int]) -> int:
+        j=len(nums)
+        for i in range(len(nums)):
+            j^=i^nums[i]
+        return j
+
+class Solution:
+    def missingNumber(self, nums: List[int]) -> int:
+        j=0
+        for i in range(len(nums)):
+            j+=i+1
+            j-=nums[i]
+        return j

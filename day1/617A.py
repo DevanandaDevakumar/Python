@@ -1,3 +1,4 @@
+#https://codeforces.com/problemset/problem/617/A
 n=int(input())
 n1=n
 s=0
