@@ -1,7 +1,7 @@
+# sum of digits of a no
 n=int(input("Enter a number:"))
 l=len(str(n))
 sum=0
-
 while(n>0):
     for i in range(1,l+1):
         digit=n%10
@@ -9,5 +9,3 @@ while(n>0):
         n=n//10
         print(sum)
 print("Sum:",sum)
-
-    
