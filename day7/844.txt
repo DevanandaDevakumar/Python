@@ -1,0 +1,14 @@
+class Solution:
+    def backspaceCompare(self, s: str, t: str) -> bool:
+        p=[]
+        q=[]
+        def find(str,list):
+            for i in str:
+                if i!='#':
+                    list.append(i)
+                else:
+                    if len(list)!=0:
+                        list.pop()
+        find(s,p)
+        find(t,q)
+        return p==q

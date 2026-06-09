@@ -1,0 +1,15 @@
+class Solution:
+    def isValid(self, s: str) -> bool:
+        st=[]
+        for i in s:
+            if i in ['[','(','{']:
+                st.append(i)
+            else:
+                if len(st)==0:
+                    return False
+                x=st.pop()
+                if x=='[' and i==']' or x=='{' and i=='}' or x=='(' and i==')':
+                    continue
+                else:
+                    return False
+        return len(st)==0

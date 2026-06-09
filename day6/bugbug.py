@@ -1,4 +1,5 @@
 # a bug can move down or right in a maze but the maze have 1 which indicate path and 0 which indicate wall, return path
+# https://www.geeksforgeeks.org/problems/rat-in-a-maze-problem/1
 
 def maze(grid,path,i,j,n):
     if i==n and j==n:
